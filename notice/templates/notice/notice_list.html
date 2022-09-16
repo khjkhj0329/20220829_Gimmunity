@@ -8,7 +8,7 @@
     <h1>공지사항</h1>
     <!-- notice_list 에서 하나씩 꺼내고 notice에 넣어서 아래 반복 -->
     {% for notice in notice_list %}
-        <div>{{ notice.title }}</div>
+        <div><a href="{% url 'notice:detail' pk=notice.pk %}">{{ notice.title }}</a></div>
     {% endfor %}
 </body>
 </html>

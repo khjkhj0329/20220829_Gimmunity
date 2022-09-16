@@ -26,7 +26,10 @@
       2. python manage.py createsuperuser
    6. views
       1. NoticeListView
+      2. NoticeDetailView
    7. templates
       1. notice_list.html
+      2. notice_detail.html
    8. urls
       1. notice:list
+      2. notice:detail
