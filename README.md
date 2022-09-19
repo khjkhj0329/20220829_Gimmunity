@@ -3,7 +3,7 @@
 - 수민외(공도윤, 김수민, 전유리, 홍해인)
 - 미림 스타트업 창업발표회 대상 수상작
 - [기획서](https://bit.ly/3Tq5i80)
-- 미림 계정 로그인, 기숙사생 정용 질문을 통과해야 가입 가능
+- 미림 계정 로그인, 기숙사생 전용 질문을 통과해야 가입 가능
 - 게시물 조회
 - 게시물 추가
 - 댓글
@@ -32,4 +32,16 @@
       2. notice_detail.html
    8. urls
       1. notice:list
-      2. notice:detail
+      2. notice:
+3. startapp post
+   1. python manage.py startapp post
+   2. 'post', in INSTALLED_APPS in settings.py
+   3. models
+      1. post
+      2. Comment
+      3. python manage.py makemigrations post
+      4. python manage.py migrate post
+   4. admin
+   5. views
+   6. templates
+   7. urls
